@@ -2,6 +2,32 @@
   text-align: center;
 }
 
+button{
+  width: 100px;
+  height: 25px;
+}
+.h{display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.hd{display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+}
+textarea{
+  width: 800px;
+  height: 180px;
+  background-color: lightblue;
+}
+input{
+  background-color: lightblue;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
