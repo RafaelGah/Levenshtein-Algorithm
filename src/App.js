@@ -26,12 +26,12 @@ function App() {
 
 
     function buttonHandler() {
-        let exit =[]
+        let exit = []
         let array = area.split(' ')
-        let index =0
-        for (let i =0; i<array.length; i++){
+        let index = 0
+        for (let i = 0; i < array.length; i++) {
             let distance = levenshteinDistance(input, array[i])
-            if (distance <= number){
+            if (distance <= number) {
                 exit.splice(index, 0, array[i])
                 index++
             }
@@ -66,7 +66,9 @@ function App() {
             <div className={"hd"}>
                 <div className={"h"}>
                     <h2>statistics</h2>
-                    <div>Levenshtein Distance: {number} <p>found words: <ul>{input2.map((e)=><li>{e}</li>)}</ul></p></div>
+                    <div>Levenshtein Distance: {number}
+                        <p>found words: <ul>{input2.map((e) => <li>{e}</li>)}</ul></p>
+                    </div>
                 </div>
                 <div className={"h"}></div>
             </div>
